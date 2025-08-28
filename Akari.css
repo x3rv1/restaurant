@@ -1,0 +1,76 @@
+/* Universal selector for consistent box-sizing and font */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+.header {
+  background-color: #222;
+  color: gold;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #444;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+/* Menu container */
+.menu {
+  padding: 30px;
+  background-color: #413e3e;
+}
+
+/* Section heading */
+.menu h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #cfbc12;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Table headers */
+th {
+  background-color: #eee;
+  text-align: left;
+  padding: 12px;
+  font-size: 1.1em;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Table rows */
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+}
+
+/* Special dish styling */
+td:first-child:contains("Special") {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+/* Price styling */
+td:last-child {
+  text-align: right;
+  font-weight: bold;
+  color: #dac612;
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
